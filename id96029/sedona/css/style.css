@@ -1,0 +1,19 @@
+body {
+	font-family: Arial, sans-serif;
+    font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+    color: #333333;
+}
+h1, h2 {
+    font-weight: bold;
+    color: black;
+}
+h1 {
+	font-size: 30px;
+	line-height: 26px;
+}
+h2 {
+	font-size: 21px;
+	line-height: 26px;
+}
