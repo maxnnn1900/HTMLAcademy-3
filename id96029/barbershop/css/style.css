@@ -1,12 +1,24 @@
 body {
   margin: 0;
   padding: 0;
-  /*  background-color: black;*/
-  
-  background-image: url('barbershop-index.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 1800px auto;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 42px;
+  color: black;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 42px;
+  color: black;
+  font-weight: bold;
 }
 
 .clearfix:after {
@@ -17,6 +29,7 @@ body {
 
 .main-header {
   padding: 5px 0;
+  background-color: black;
 }
 
 .container {
@@ -36,6 +49,7 @@ body {
 
 .main-footer {
   padding: 40px 0;
+  background-image: url('../img/bg-footer.png')
 }
 
 .footer-contacts {
@@ -55,7 +69,12 @@ body {
 }
 
 .main-container {
-  margin: 60px auto;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: black;
+  background-image: url('../img/bg-main.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .logo {
@@ -97,7 +116,10 @@ body {
 }
 
 .shop-container {
-  margin: 60px auto 45px auto;
+  padding-top: 60px;
+  padding-bottom: 45px;
+  background-image: url('../img/bg-content.png');
+  background-repeat: repeat;
 }
 
 .shop-title {
