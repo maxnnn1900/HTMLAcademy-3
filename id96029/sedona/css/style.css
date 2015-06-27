@@ -135,6 +135,16 @@ h2 {
   line-height: 26px;
 }
 
+.btn {
+  border: none;
+  outline:none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
 .positioner {
   max-width: 1200px;
   min-width: 768px;
@@ -395,19 +405,85 @@ h2 {
   margin-bottom: 45px;
 }
 
+.search-form {
+  position: relative;
+  width: 570px;
+  margin: 0 auto;
+  height: 85px;
+}
+
 .form-btn {
   height: 85px;
-  width: 568px;
-  border-width: 0;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
   color: #fff;
   background-color: rgba(118, 99, 87, 1);
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 21px;
+}
+
+.form-btn:hover {
+  cursor: pointer;
+  background-color: rgba(129, 179, 210, 1);
 }
 
 .search-form form {
   display: none;
+  position: absolute;
+  z-index: 1;
+  top: 85px;
+  text-align: left;
+  padding: 55px;
+  background: #fff;
+  box-shadow: 0 7px 15px 0 rgba(0,0,0,.15);
+}
+
+.search-form label {
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.search-form .half-label {
+  margin-right: -4px;
+  width: 50%;
+}
+
+.search-form label:last-child {
+  padding-left: 20px;
+}
+
+.search-form input[type="text"] {
+  box-sizing: border-box;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 6px 14px;
+  border: none;
+  background-color: rgba(242,242,242,1);
+  margin-bottom: 30px;
+}
+
+.search-form .calendar {
+  width: 345px;
+  float: right;
+}
+
+.search-form .counter {
+  width: 115px;
+  float: right;
+}
+
+.show-form form { display: block; }
+
+.show-form .form-btn { box-shadow: 0 10px 20px 0 rgba(0,1,1,.25); }
+
+.search-form .search-btn {
+  display: block;
+  width: 100%;
+  background-color: rgba(129, 179, 210, 1);
+  height: 58px;
 }
 
 #map {

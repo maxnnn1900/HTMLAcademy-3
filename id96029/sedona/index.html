@@ -114,24 +114,24 @@
         <div class="search-block-title">ЗАИНТЕРЕСОВАЛИСЬ?</div>
         <p>Укажите предполагаемые даты поездки
           <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <div class="search-form">
+        <div class="search-form show-form">
 
-          <button class="form-btn">ПОИСК ГОСТИНИЦЫ В седоне</button>
+          <button class="btn form-btn">ПОИСК ГОСТИНИЦЫ В седоне</button>
 
           <form action="catalog.html" method="get">
             <label>Дата заезда:
-              <input type="text" name="" value="" placeholder="24 апреля 2014">
+              <input class="calendar" type="text" name="" value="" placeholder="24 апреля 2014">
             </label>
             <label>Дата выезда:
-              <input type="text" name="" value="" placeholder="4 июля 2014">
+              <input class="calendar" type="text" name="" value="" placeholder="4 июля 2014">
             </label>
-            <label>Взрослые:
-              <input type="text" name="" value="2" placeholder="2">
+            <label class="half-label">Взрослые:
+              <input class="counter" type="text" name="" value="2" placeholder="2">
             </label>
-            <label>Дети:
-              <input type="text" name="" value="0" placeholder="0">
+            <label class="half-label">Дети:
+              <input class="counter" type="text" name="" value="0" placeholder="0">
             </label>
-            <button class="search-btn" type="submit">Найти</button>
+            <button class="btn search-btn" type="submit">Найти</button>
           </form>
         </div>
         <div id="map"></div>
