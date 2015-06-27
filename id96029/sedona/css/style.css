@@ -1,3 +1,5 @@
+/*Common CSS*/
+
 @font-face {
   font-family: 'symbols-sedona';
   src: url('../font/symbols-sedona.eot?60737633');
@@ -137,7 +139,7 @@ h2 {
 
 .btn {
   border: none;
-  outline:none;
+  outline: none;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
@@ -274,6 +276,7 @@ h2 {
   display: table;
   clear: both;
 }
+/*CSS for index.html*/
 
 .welcome-block {
   min-width: 768px;
@@ -435,7 +438,7 @@ h2 {
   text-align: left;
   padding: 55px;
   background: #fff;
-  box-shadow: 0 7px 15px 0 rgba(0,0,0,.15);
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
 }
 
 .search-form label {
@@ -461,7 +464,7 @@ h2 {
   font-weight: bold;
   padding: 6px 14px;
   border: none;
-  background-color: rgba(242,242,242,1);
+  background-color: rgba(242, 242, 242, 1);
   margin-bottom: 30px;
 }
 
@@ -475,9 +478,13 @@ h2 {
   float: right;
 }
 
-.show-form form { display: block; }
+.show-form form {
+  display: block;
+}
 
-.show-form .form-btn { box-shadow: 0 10px 20px 0 rgba(0,1,1,.25); }
+.show-form .form-btn {
+  box-shadow: 0 10px 20px 0 rgba(0, 1, 1, .25);
+}
 
 .search-form .search-btn {
   display: block;
@@ -488,4 +495,15 @@ h2 {
 
 #map {
   height: 473px;
+}
+/*CSS for catalog.html*/
+
+.content {
+  padding: 0 70px;
+}
+
+.filter {
+  background-image: url('../img/bg-hotels-filter.jpg');
+  background-size: cover;
+  background-position: center;
 }
