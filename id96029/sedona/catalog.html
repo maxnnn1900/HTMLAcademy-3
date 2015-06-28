@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona</title>
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,latin" rel="stylesheet" type="text/css" data-noprefix="">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,8 +20,7 @@
             <a href="#">Фото и видео</a>
           </li>
           <li>
-            <!-- ссылка должна быть по контуру картинки??? -->
-            <a class="logo" href="#">
+            <a class="logo" href="index.html">
               <img src="img/menu-logo.png" alt="Sedona">
             </a>
           </li>
@@ -28,7 +28,7 @@
             <a href="#">Карта штата</a>
           </li>
           <li>
-            <a href="#">Гостиницы</a>
+            <a class="active" href="#">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -40,13 +40,16 @@
           <span class="filter-group">Инфраструктура:</span>
           <ul>
             <li>
-              <label><input type="checkbox" name="" value="">Бассейн</label>
+              <input id="1" type="checkbox" name="" value="" disabled>
+              <label for="1">Бассейн</label>
             </li>
             <li>
-              <label><input type="checkbox" name="" value="">Парковка</label>
+              <input id="2" type="checkbox" name="" value="" disabled checked>
+              <label for="2">Парковка</label>
             </li>
             <li>
-              <label><input type="checkbox" name="" value="">Wi-Fi</label>
+              <input id="3" type="checkbox" name="" value="" checked>
+              <label for="3">Wi-Fi</label>
             </li>
           </ul>
         </div>
@@ -54,46 +57,50 @@
           <span class="filter-group">Тип жилья:</span>
           <ul>
             <li>
-              <label><input type="checkbox" name="" value="">Гостиница</label>
+              <input id="4" type="checkbox" name="" value="">
+              <label for="4">Гостиница</label>
             </li>
             <li>
-              <label><input type="checkbox" name="" value="">Мотель</label>
+              <input id="5" type="checkbox" name="" value="">
+              <label for="5">Мотель</label>
             </li>
             <li>
-               <label><input type="checkbox" name="" value="">Апартаменты</label>
+              <input id="6" type="checkbox" name="" value="">
+              <label for="6">Апартаменты</label>
             </li>
           </ul>
         </div>
         <div class="filter3">
-         <span class="filter-group">Стоимость в сутки (р):</span>
-          <div class="ranger">
-            <label>От
-              <input type="text" name="" value="0" placeholder="0">|</label>
-            <label>До
+          <span class="filter-group">Стоимость в сутки (р):</span>
+          <div class="price-controls">
+            <label class="from">От
+              <input class="input-border" type="text" name="" value="0" placeholder="0">
+            </label>
+            <label class="to">До
               <input type="text" name="" value="3000" placeholder="3000">
             </label>
           </div>
-          <div class="ranger-controls">
+          <div class="range-controls">
             <div class="scale">
-              <div class="bar"></div>
+              <div style="width:50%;" class="bar"></div>
             </div>
             <div class="toggle min"></div>
             <div class="toggle max"></div>
           </div>
-          <button class="search-btn" type="submit">Показать</button>
+          <button class="search-btn btn" type="submit">Показать</button>
         </div>
       </form>
     </section>
 
     <section class="sortbar content">
-      <h2>Найдено: 3</h2>
-      <span class="sortbar-title">Сортировка</span>
+      <span class="total">Найдено: 3</span>
+      <span class="sortbar-title">Сортировка:</span>
       <a class="active" href="#">По цене</a>
       <a href="#">По типу</a>
       <a href="#">По рейтингу</a>
       <div class="order">
-        <a class="asc" href="#"></a>
-        <a class="desc active" href="#"></a>
+        <a class="asc" href="#"><i class="icon-up-dir"></i></a>
+        <a class="desc active" href="#"><i class="icon-down-dir"></i></a>
       </div>
     </section>
 
@@ -102,53 +109,66 @@
       <ul>
 
         <li class="item content">
-          <a href="#">
+          <a class="img-item" href="#">
             <img src="img/hotel-1.jpg" alt="Amara resort and spa">
           </a>
           <a href="#" class="title">Amara resort &amp; spa</a>
-          <div class="row">
+          <div class="details">
             <div class="hotel-type">Гостиница</div>
             <div class="price">От 3500 р.</div>
           </div>
-          <div class="row">
-            <a href="#" class="more">Подробнее</a>
-            <a href="#" class="book">Забронировать</a>
+          <div class="item-buttons">
+            <a href="#" class="more btn">Подробнее</a>
+            <a href="#" class="book btn">Забронировать</a>
           </div>
-          <div class="stars" style="width:0px"></div>
+          <div class="stars">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
           <span class="rate">Рейтинг: 8,5</span>
         </li>
 
         <li class="item content">
-          <a href="#">
+          <a class="img-item" href="#">
             <img src="img/hotel-2.jpg" alt="Desert quail inn">
           </a>
           <a href="#" class="title">Desert quail inn</a>
-          <div class="row">
+          <div class="details">
             <div class="hotel-type">Мотель</div>
             <div class="price">От 2000 р.</div>
           </div>
-          <div class="row">
-            <a href="#" class="more">Подробнее</a>
-            <a href="#" class="book">Забронировать</a>
+          <div class="item-buttons">
+            <a href="#" class="more btn">Подробнее</a>
+            <a href="#" class="book btn">Забронировать</a>
           </div>
-          <div class="stars" style="width:0px"></div>
+          <div class="stars">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
           <span class="rate">Рейтинг: 8,9</span>
         </li>
 
         <li class="item content">
-          <a href="#">
+          <a class="img-item" href="#">
             <img src="img/hotel-3.jpg" alt="Villas at poco diablo">
           </a>
           <a href="#" class="title">Villas at poco diablo</a>
-          <div class="row">
+          <div class="details">
             <div class="hotel-type">Апартаменты</div>
             <div class="price">От 4000 р.</div>
           </div>
-          <div class="row">
-            <a href="#" class="more">Подробнее</a>
-            <a href="#" class="book">Забронировать</a>
+          <div class="item-buttons">
+            <a href="#" class="more btn">Подробнее</a>
+            <a href="#" class="book btn">Забронировать</a>
           </div>
-          <div class="stars" style="width:0px"></div>
+          <div class="stars">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
           <span class="rate">Рейтинг: 9,2</span>
         </li>
 
