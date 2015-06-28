@@ -121,6 +121,8 @@ p {
   padding: 0;
 }
 
+a {text-decoration: none; color:red;}
+
 h1,
 h2 {
   font-weight: bold;
@@ -152,13 +154,13 @@ h2 {
   min-width: 768px;
   margin: 0 auto;
   box-shadow: 0 0 15px 5px rgba(0, 1, 1, .2);
+  background-color: #fff;
 }
 
 .header {
   height: 57px;
   margin: 0;
   padding: 0;
-  background-color: white;
   list-style: none;
 }
 
@@ -204,8 +206,6 @@ h2 {
 .header a.active:active {
   color: rgba(118, 99, 87, .3);
 }
-
-.footer {}
 
 .footer-column {
   width: 33.33%;
@@ -343,7 +343,6 @@ h2 {
 }
 
 .pic-item {
-  background-color: #fff;
   padding-top: 60px;
   height: 270px;
 }
@@ -382,6 +381,8 @@ h2 {
   background-repeat: no-repeat;
 }
 
+.simple-item { background-color: #f2f2f2; }
+
 .features-item .number {
   display: inline-block;
   margin-top: 15px;
@@ -392,7 +393,6 @@ h2 {
 }
 
 .search-block {
-  background-color: #fff;
   text-align: center;
   padding-top: 55px;
 }
@@ -496,6 +496,7 @@ h2 {
 #map {
   height: 473px;
 }
+
 /*CSS for catalog.html*/
 
 .content {
@@ -533,4 +534,21 @@ h2 {
 
 .filter li {
   line-height: 45px;
+}
+.catalog ul { list-style: none; }
+
+.catalog .item {
+  position: relative;
+  padding-left: 237px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.catalog img {
+  position: absolute;
+  left: 70px;
+}
+
+.catalog .title {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000;
 }
