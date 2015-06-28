@@ -120,15 +120,19 @@
 
           <form action="catalog.html" method="get">
             <label>Дата заезда:
-              <input class="calendar" type="text" name="" value="" placeholder="24 апреля 2014">
+              <i class="icon-calendar"></i>
+              <input class="calendar" type="text" name="" value="24 апреля 2014" placeholder="">
             </label>
             <label>Дата выезда:
-              <input class="calendar" type="text" name="" value="" placeholder="4 июля 2014">
+              <i class="icon-calendar"></i>
+              <input class="calendar" type="text" name="" value="4 июля 2014" placeholder="">
             </label>
-            <label class="half-label">Взрослые:
-              <input class="counter" type="text" name="" value="2" placeholder="2">
+            <label class="left-col">Взрослые:
+              <i class="icon-minus"></i><i class="icon-plus"></i>
+              <input class="counter" type="text" name="" value="2" placeholder="0">
             </label>
-            <label class="half-label">Дети:
+            <label class="right-col">Дети:
+              <i class="icon-minus"></i><i class="icon-plus"></i>
               <input class="counter" type="text" name="" value="0" placeholder="0">
             </label>
             <button class="btn btn-blue search-btn" type="submit">Найти</button>
