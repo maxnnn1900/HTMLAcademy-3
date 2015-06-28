@@ -499,11 +499,38 @@ h2 {
 /*CSS for catalog.html*/
 
 .content {
-  padding: 0 70px;
+  padding: 30px 70px;
 }
 
 .filter {
   background-image: url('../img/bg-hotels-filter.jpg');
   background-size: cover;
   background-position: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+.filter1, .filter2 {
+  width: 24%;
+  float: left;
+}
+
+.filter3 {
+  width: 310px;
+  float: right;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-group {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.filter li {
+  line-height: 45px;
 }
