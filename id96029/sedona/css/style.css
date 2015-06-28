@@ -152,6 +152,34 @@ h2 {
   font-family: 'PT Sans', Arial, sans-serif;
 }
 
+.btn-blue {
+  background-color: #81b3d2;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #669ec0;
+}
+
+.btn-blue:active {
+  color: rgba(255, 255, 255, .3);
+  background-color: #5496bd;
+}
+
+.btn-brown {
+  background-color: #766357;
+  color: #fff;
+}
+
+.btn-brown:hover {
+  background-color: #604e43;
+}
+
+.btn-brown:active {
+  color: rgba(255, 255, 255, .3);
+  background-color: #503e33;
+}
+
 .positioner {
   max-width: 1200px;
   min-width: 768px;
@@ -258,19 +286,8 @@ h2 {
   margin-right: 6px;
   vertical-align: middle;
   line-height: 48px;
-  color: #fff;
   font-size: 21px;
   text-align: center;
-  background-color: #81b3d2;
-}
-
-.footer .social:hover {
-  background-color: #669ec0;
-}
-
-.footer .social:active {
-  color: rgba(255, 255, 255, .3);
-  background-color: #5496bd;
 }
 
 .clearfix:after {
@@ -425,13 +442,10 @@ h2 {
   position: absolute;
   z-index: 2;
   width: 100%;
-  color: #fff;
-  background-color: rgba(118, 99, 87, 1);
 }
 
 .form-btn:hover {
   cursor: pointer;
-  background-color: rgba(129, 179, 210, 1);
 }
 
 .search-form form {
@@ -493,17 +507,7 @@ h2 {
 .search-form .search-btn {
   display: block;
   width: 100%;
-  background-color: rgba(129, 179, 210, 1);
   height: 58px;
-}
-
-.search-form .search-btn:hover {
-  background-color: #669ec0;
-}
-
-.search-form .search-btn:active {
-  color: rgba(255, 255, 255, .3);
-  background-color: #5496bd;
 }
 
 #map {
@@ -762,33 +766,6 @@ h2 {
 .catalog .item-buttons a {
   font-size: 14px;
   padding: 3px 17px;
-}
-
-.catalog .more {
-  background-color: #81b3d2;
-}
-
-.catalog .more:hover {
-  background-color: #669ec0;
-}
-
-.catalog .more:active {
-  color: rgba(255, 255, 255, .3);
-  background-color: #5496bd;
-}
-
-.catalog .book {
-  margin-left: 2px;
-  background-color: #766357;
-}
-
-.catalog .book:hover {
-  background-color: #604e43;
-}
-
-.catalog .book:active {
-  color: rgba(255, 255, 255, .3);
-  background-color: #503e33;
 }
 
 .catalog .details div,
