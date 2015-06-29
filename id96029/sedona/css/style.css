@@ -522,11 +522,17 @@ h2 {
   font-size: 21px;
 }
 
-.search-form .icon-plus { right: 10px;}
+.search-form .icon-plus {
+  right: 10px;
+}
 
-.search-form .icon-minus { right: 85px; }
+.search-form .icon-minus {
+  right: 85px;
+}
 
-.show-form form { display: block; }
+.show-form form {
+  display: block;
+}
 
 .show-form .form-btn {
   box-shadow: 0 10px 20px 0 rgba(0, 1, 1, .25);
@@ -809,7 +815,7 @@ h2 {
 
 .catalog .stars {
   top: 30px;
-  width: 130px;
+  width: 135px;
   font-size: 19px;
   word-spacing: -7px;
   text-align: right;
