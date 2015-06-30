@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="index">
   <div class="positioner">
     <header class="header">
       <nav class="navigation">
@@ -114,29 +114,30 @@
         <div class="search-block-title">ЗАИНТЕРЕСОВАЛИСЬ?</div>
         <p>Укажите предполагаемые даты поездки
           <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <div class="search-form show-form">
+        <div class="search-form">
 
           <button class="btn btn-brown form-btn">ПОИСК ГОСТИНИЦЫ В седоне</button>
-
-          <form action="catalog.html" method="get">
-            <label>Дата заезда:
-              <i class="icon-calendar"></i>
-              <input class="calendar" type="text" name="" value="24 апреля 2014" placeholder="">
-            </label>
-            <label>Дата выезда:
-              <i class="icon-calendar"></i>
-              <input class="calendar" type="text" name="" value="4 июля 2014" placeholder="">
-            </label>
-            <label class="left-col">Взрослые:
-              <i class="icon-minus"></i><i class="icon-plus"></i>
-              <input class="counter" type="text" name="" value="2" placeholder="0">
-            </label>
-            <label class="right-col">Дети:
-              <i class="icon-minus"></i><i class="icon-plus"></i>
-              <input class="counter" type="text" name="" value="0" placeholder="0">
-            </label>
-            <button class="btn btn-blue search-btn" type="submit">Найти</button>
-          </form>
+          <div class="form-overflow">
+            <form action="catalog.html" method="get">
+              <label>Дата заезда:
+                <i class="icon-calendar"></i>
+                <input class="calendar" type="text" name="from" value="" placeholder="ДД.ММ.ГГ">
+              </label>
+              <label>Дата выезда:
+                <i class="icon-calendar"></i>
+                <input class="calendar" type="text" name="to" value="" placeholder="ДД.ММ.ГГ">
+              </label>
+              <label class="left-col">Взрослые:
+                <i class="icon-minus"></i><i class="icon-plus"></i>
+                <input class="counter" type="text" name="adults" value="" placeholder="0">
+              </label>
+              <label class="right-col">Дети:
+                <i class="icon-minus"></i><i class="icon-plus"></i>
+                <input class="counter" type="text" name="children" value="" placeholder="0">
+              </label>
+              <button class="btn btn-blue search-btn" type="submit">Найти</button>
+            </form>
+          </div>
         </div>
         <div id="map"></div>
       </section>
@@ -160,6 +161,26 @@
     </footer>
   </div>
   <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=gqKPb93SNWbgKcYiw6Mp4gLmOWBQvxFD&id=map"></script>
+  <script>
+    var button = document.querySelector(".form-btn");
+    var dropdown = document.querySelector(".search-form");
+    var searchForm = document.querySelector(".search-form form");
+    var from = document.querySelector("[name=from]");
+    var to = document.querySelector("[name=to]");
+    var adults = document.querySelector("[name=adults]");
+
+    button.addEventListener("click", function(event) {
+      event.preventDefault();
+      dropdown.classList.toggle("show-form");
+      });
+    searchForm.addEventListener("submit", function(event) {
+      if (!(from.value && to.value && adults.value)) {
+          event.preventDefault();
+          searchForm.classList.add("error");
+        }
+      });
+
+  </script>
 </body>
 
 </html>

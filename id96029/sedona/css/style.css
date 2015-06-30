@@ -181,13 +181,14 @@ h2 {
 }
 
 .positioner {
-  position: relative;
   max-width: 1200px;
   min-width: 768px;
   margin: 0 auto;
   box-shadow: 0 0 15px 5px rgba(0, 1, 1, .2);
   background-color: #fff;
 }
+
+.index .positioner { position: relative; }
 
 .header {
   height: 57px;
@@ -239,9 +240,11 @@ h2 {
   color: rgba(118, 99, 87, .3);
 }
 .footer {
+  width: 100%; }
+
+.index .footer {
   position: absolute;
   bottom: 0;
-  width: 100%;
   background-color: rgba(255,255,255,.9); }
 
 .footer-column {
@@ -448,21 +451,40 @@ h2 {
   position: absolute;
   z-index: 2;
   width: 100%;
+  -webkit-transition: box-shadow 0.7s ease-in-out;
+          transition: box-shadow 0.7s ease-in-out;
 }
 
 .form-btn:hover {
   cursor: pointer;
 }
 
-.search-form form {
-  display: none;
-  position: absolute;
+.show-form .form-btn {
+  box-shadow: 0 10px 20px 0 rgba(0, 1, 1, .25);
+}
+
+.form-overflow {
+  overflow: hidden;
+  position: relative;
   z-index: 1;
   top: 85px;
+  height: 0;
+  -webkit-transition: height 0.7s ease-in-out;
+          transition: height 0.7s ease-in-out;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
+}
+
+.show-form .form-overflow {
+  display: block;
+  height: 372px;
+}
+
+.search-form form {
+  position: absolute;
+  bottom: 0;
   text-align: left;
   padding: 55px;
   background: #fff;
-  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
 }
 
 .search-form label {
@@ -495,6 +517,10 @@ h2 {
   border: none;
   outline: none;
   background-color: rgba(242, 242, 242, 1);
+}
+
+.search-form .error input[type="text"] {
+  background-color: rgba(255, 0, 0, .05);
 }
 
 .search-form .calendar {
@@ -534,14 +560,6 @@ h2 {
 
 .search-form .icon-minus {
   right: 85px;
-}
-
-.show-form form {
-  display: block;
-}
-
-.show-form .form-btn {
-  box-shadow: 0 10px 20px 0 rgba(0, 1, 1, .25);
 }
 
 .search-form .search-btn {
@@ -680,7 +698,7 @@ h2 {
   vertical-align: top;
 }
 
-.filter input[type="checkbox"] + label::before {
+.filter input[type="checkbox"] + label:before {
   content: '\2610';
   position: absolute;
   top: 1px;
@@ -690,15 +708,15 @@ h2 {
   color: #b5b5b5;
 }
 
-.filter input[type="checkbox"] + label:hover::before {
+.filter input[type="checkbox"] + label:hover:before {
   color: #fff;
 }
 
-.filter input[type="checkbox"]:disabled + label::before {
+.filter input[type="checkbox"]:disabled + label:before {
   color: #6a6a6a;
 }
 
-.filter input[type="checkbox"]:checked + label::before {
+.filter input[type="checkbox"]:checked + label:before {
   content: '\2611';
 }
 
