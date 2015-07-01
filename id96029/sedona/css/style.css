@@ -684,6 +684,7 @@ h2 {
   border: 2px solid #fff;
   border-radius: 2px;
   background: none;
+  cursor: pointer;
 }
 
 .filter input[type="checkbox"] {
