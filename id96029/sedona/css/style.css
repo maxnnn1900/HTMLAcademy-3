@@ -350,17 +350,18 @@ h2 {
 
 .features-item {
   display: inline-block;
-  height: 206px;
   width: 33.33%;
   margin-right: -4px;
   text-align: center;
   vertical-align: top;
-  padding-top: 50px;
+  padding: 50px 20px 56px;
+  box-sizing: border-box;
 }
 
 .accent-item {
   background-color: rgba(129, 179, 210, 1);
   color: #fff;
+  height: 255px;
 }
 
 .accent-item h2 {
@@ -369,11 +370,12 @@ h2 {
 
 .img-item {
   width: 66.66%;
+  height: 255px;
 }
 
 .pic-item {
   padding-top: 60px;
-  height: 270px;
+  padding-bottom: 82px;
 }
 
 .pic-item .pic {
@@ -410,9 +412,13 @@ h2 {
   background-repeat: no-repeat;
 }
 
-.simple-item {
+.features-items-gray {
   background-color: #f2f2f2;
+}
+
+.simple-item {
   padding-top: 45px;
+  padding-bottom: 62px;
 }
 
 .features-item .number {
