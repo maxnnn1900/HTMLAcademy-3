@@ -579,6 +579,18 @@ h2 {
   padding: 30px 70px;
 }
 
+@media (max-width: 1000px) {
+  .content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.filter.content {
+  padding-top: 25px;
+  padding-bottom: 20px
+}
+
 .filter {
   background-image: url('../img/bg-hotels-filter.jpg');
   background-size: cover;
@@ -594,7 +606,8 @@ h2 {
 }
 
 .filter3 {
-  width: 310px;
+  margin-right: 12px;
+  width: 318px;
   float: right;
 }
 
@@ -606,7 +619,7 @@ h2 {
   display: block;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .filter li {
@@ -679,7 +692,7 @@ h2 {
 
 .filter .search-btn {
   display: block;
-  margin: 12px auto;
+  margin: 12px auto 0;
   padding: 5px 35px;
   font-size: 14px;
   font-weight: normal;
@@ -721,6 +734,13 @@ h2 {
 
 .filter input[type="checkbox"]:checked + label:before {
   content: '\2611';
+}
+
+
+/* sorting */
+.sortbar.content {
+  padding-top: 35px;
+  padding-bottom: 28px;
 }
 
 .sortbar .total,
@@ -781,6 +801,11 @@ h2 {
 
 .catalog ul {
   list-style: none;
+}
+
+.item.content {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .catalog .item {
