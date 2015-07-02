@@ -314,6 +314,7 @@ h2 {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #ACCDE1;
 }
 
 .welcome-img {
@@ -403,6 +404,7 @@ h2 {
   width: 66.66%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #ab8251;
 }
 
 .img-item-left {
@@ -410,6 +412,7 @@ h2 {
   width: 66.66%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #b1755f;
 }
 
 .features-items-gray {
@@ -601,6 +604,7 @@ h2 {
   background-image: url('../img/bg-hotels-filter.jpg');
   background-size: cover;
   background-position: center;
+  background-color: #7e9dbf;
   color: #fff;
   font-size: 14px;
 }
